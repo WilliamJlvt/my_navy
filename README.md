@@ -6,6 +6,19 @@ Battleship Game using Signals
 Project Description
 This project involves implementing a terminal version of the classic Battleship game using signals for communication between two players. The players can only communicate using the signals SIGUSER1 and SIGUSER2, and it is important to handle signal loss carefully while designing the communication protocol. The game is played on an 8x8 map, and on each turn, players must display their own positions and then their enemy's positions. The game concludes when all the ships of a player have been hit, at which point the winner is determined and the result is displayed.
 
+## Prerequisites
+ - [Make](https://www.gnu.org/software/make/)
+ - [GCC](https://gcc.gnu.org/)
+ - [LibC](https://www.gnu.org/software/libc/)
+
+## Installation
+```
+B-PSU-100> git clone git@github.com:WilliamJlvt/my_navy.git
+...
+B-PSU-100> make
+...
+```
+
 ## Usage
 ```
 B-PSU-100> ./my_navy -h
