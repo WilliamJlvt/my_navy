@@ -38,3 +38,7 @@ DESCRIPTION
 | 03 - protocol     | 4/4    | 100%    |
 | 04 - game | 8/7    | 87.5%   |
 | total              | 23/22  | 95.7%   |
+
+## Authors
+* **William JOLIVET** ([GitHub](https://github.com/WilliamJlvt) / [LinkedIn](https://www.linkedin.com/in/william-jolivet-64951a24b/))
+* **Florian REYNAUD** ([GitHub](https://github.com/FLOWleplusbeau))
