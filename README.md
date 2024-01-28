@@ -47,3 +47,6 @@ All the source code has been written according to the [Epitech C Coding Style](h
 ## Authors
 * **William JOLIVET** ([GitHub](https://github.com/WilliamJlvt) / [LinkedIn](https://www.linkedin.com/in/william-jolivet-64951a24b/))
 * **Florian REYNAUD** ([GitHub](https://github.com/FLOWleplusbeau))
+
+## License
+This project is licensed under the GNU Public License version 3.0 - see the [LICENSE](LICENSE) file for details.
