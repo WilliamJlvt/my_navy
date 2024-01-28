@@ -39,6 +39,9 @@ DESCRIPTION
 | 04 - game | 8/7    | 87.5%   |
 | total              | 23/22  | 95.7%   |
 
+## Coding style
+All the source code has been written according to the [Epitech C Coding Style](https://williamjlvt.github.io/assets/coding_style/epitech_c_coding_style.pdf).
+
 ## Authors
 * **William JOLIVET** ([GitHub](https://github.com/WilliamJlvt) / [LinkedIn](https://www.linkedin.com/in/william-jolivet-64951a24b/))
 * **Florian REYNAUD** ([GitHub](https://github.com/FLOWleplusbeau))
