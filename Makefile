@@ -7,26 +7,26 @@
 
 CC	=	gcc -g3
 
-SRCS_FILE	=	src/main.c						\
-				src/connection/guest_connection.c		\
-				src/connection/host_connection.c		\
-				src/game/check_win.c				\
-				src/game/game_loop.c				\
-				src/listener/signal_listener.c			\
-				src/map/enemy_map.c				\
-				src/map/my_map.c				\
-				src/parser/map_parser.c				\
-				src/protocol/protocol_service.c			\
-				src/protocol/reader/bytes_reader.c		\
-				src/protocol/signal/signal_manager.c		\
-				src/protocol/signal/signal_sender.c		\
+SRCS_FILE	=	src/main.c				\
+		src/connection/guest_connection.c		\
+		src/connection/host_connection.c		\
+		src/game/check_win.c				\
+		src/game/game_loop.c				\
+		src/listener/signal_listener.c			\
+		src/map/enemy_map.c				\
+		src/map/my_map.c				\
+		src/parser/map_parser.c				\
+		src/protocol/protocol_service.c			\
+		src/protocol/reader/bytes_reader.c		\
+		src/protocol/signal/signal_manager.c		\
+		src/protocol/signal/signal_sender.c		\
 
-COMMONS_FILE	=	lib/commons/my_str_dup.c				\
-					lib/commons/my_rev_str.c		\
-					lib/commons/my_get_nbr.c		\
-					lib/commons/my_str_utils.c		\
-					lib/commons/my_str_to_word_array.c	\
-					lib/commons/my_put_int.c		\
+COMMONS_FILE	=	lib/commons/my_str_dup.c		\
+			lib/commons/my_rev_str.c		\
+			lib/commons/my_get_nbr.c		\
+			lib/commons/my_str_utils.c		\
+			lib/commons/my_str_to_word_array.c	\
+			lib/commons/my_put_int.c		\
 
 HRCS	=	include
 
