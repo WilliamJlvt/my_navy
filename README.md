@@ -32,17 +32,21 @@ DESCRIPTION
 ```
 
 ## Results
-| test               | passed | results |
-|--------------------|--------|---------|
-| 00 - cheater       | 1/1    | 100%    |
-| 01 - basic signals | 2/2    | 100%    |
-| 02 - rigor        | 8/8    | 100%    |
-| 03 - protocol     | 4/4    | 100%    |
-| 04 - game | 8/7    | 87.5%   |
-| total              | 23/22  | 95.7%   |
+| test                | passed | results |
+|---------------------|--------|---------|
+| 00 - cheater        | 1/1    | 100%    |
+| 01 - basic signals  | 2/2    | 100%    |
+| 02 - rigor          | 8/8    | 100%    |
+| 03 - protocol       | 4/4    | 100%    |
+| 04 - game           | 8/7    | 87.5%   |
+| total               | 23/22  | 95.7%   |
 
 ## Coding style
 All the source code has been written according to the [Epitech C Coding Style](https://williamjlvt.github.io/assets/coding_style/epitech_c_coding_style.pdf).
+#### errors
+| Fatal | Major  | Minor | Info |
+|-------|--------|-------|------|
+| 0     | 0      | 0     | 0    |
 
 ## Authors
 * **William JOLIVET** ([GitHub](https://github.com/WilliamJlvt) / [LinkedIn](https://www.linkedin.com/in/william-jolivet-64951a24b/))
