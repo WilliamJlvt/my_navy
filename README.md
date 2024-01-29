@@ -37,7 +37,7 @@ DESCRIPTION
 | 02 - rigor          | 8/8    | 100%    |
 | 03 - protocol       | 4/4    | 100%    |
 | 04 - game           | 8/7    | 87.5%   |
-| total               | 23/22  | 95.7%   |
+| total               | 22/23  | 95.7%   |
 
 ## Coding style
 All the source code has been written according to the [Epitech C Coding Style](https://williamjlvt.github.io/assets/coding_style/epitech_c_coding_style.pdf).
