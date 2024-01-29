@@ -47,7 +47,7 @@ All the source code has been written according to the [Epitech C Coding Style](h
 | 0     | 0      | 0     | 0    |
 
 ## Authors
-* **William JOLIVET** ([GitHub](https://github.com/WilliamJlvt) / [LinkedIn](https://www.linkedin.com/in/william-jolivet-64951a24b/))
+* **William JOLIVET** ([GitHub](https://github.com/WilliamJlvt) / [LinkedIn](https://www.linkedin.com/in/william-jolivet/))
 * **Florian REYNAUD** ([GitHub](https://github.com/FLOWleplusbeau))
 
 ## License
