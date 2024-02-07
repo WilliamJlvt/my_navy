@@ -24,6 +24,9 @@ jobs:
     - name: Build with make
       run: make
       
+    - name: Add perm
+      run: chmod +x ./my_navy
+      
     - name: Create Tag
       id: tag
       run: echo ::set-output name=TAG::$(date +'%Y%m%d%H%M%S')
