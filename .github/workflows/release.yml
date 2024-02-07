@@ -29,8 +29,8 @@ jobs:
       
     - name: Create Tag
       id: tag
-      run: echo ::set-output name=TAG::$(date +'%m%d%H%M%S')
-
+      run: echo ::set-output name=TAG::$(date +'%d/%m/%Y - %H:%M')
+      
     - name: Create Release
       id: create_release
       uses: softprops/action-gh-release@v1
