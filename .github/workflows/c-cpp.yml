@@ -41,4 +41,4 @@ jobs:
         files: |
           ./path/to/your/binary   # Change this to the path of your compiled binary
         tag_name: ${{ steps.tag.outputs.TAG }}
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
