@@ -24,19 +24,18 @@ jobs:
     - name: Build with make
       run: make
       
-    - name: Add perm
+    - name: Add permissions
       run: chmod +x ./my_navy
       
     - name: Create Tag
       id: tag
-      run: echo ::set-output name=TAG::$(date +'%d/%m/%Y - %H:%M')
-      
+      run: echo "TAG=$(date +'%Y%m%d%H%M')" >> $GITHUB_ENV
+
     - name: Create Release
       id: create_release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           my_navy
-        tag_name: ${{ steps.tag.outputs.TAG }}
+        tag_name: ${{ env.TAG }}
         token: ${{ secrets.TOKEN }}
-        
