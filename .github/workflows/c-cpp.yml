@@ -30,11 +30,15 @@ jobs:
     needs: build
 
     steps:
-    - name: Create Release
+    - name: Create tag
+      id: create_tag
+      run: echo "1.0.0" > .tag
+
+    - name: Set up release
       id: create_release
       uses: softprops/action-gh-release@v1
       with:
+        tag_name: ${{ steps.create_tag.outputs.tag }}
         files: |
           ./path/to/your/binary   # Change this to the path of your compiled binary
-        title: Release ${{ github.run_number }}
         token: ${{ secrets.TOKEN }}
