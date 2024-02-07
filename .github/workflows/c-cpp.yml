@@ -38,7 +38,14 @@ jobs:
       id: create_release
       uses: softprops/action-gh-release@v1
       with:
-        files: |
-          my_navy
+        files: my_navy   # Point to the binary in the root directory
         tag_name: ${{ steps.tag.outputs.TAG }}
+        token: ${{ secrets.GH_TOKEN }}
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      with:
+        asset_path: my_navy
+        asset_name: my_navy
+        release_url: ${{ steps.create_release.outputs.upload_url }}
         token: ${{ secrets.TOKEN }}
