@@ -39,6 +39,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          ./my_navy
+          my_navy
         tag_name: ${{ steps.tag.outputs.TAG }}
         token: ${{ secrets.TOKEN }}
