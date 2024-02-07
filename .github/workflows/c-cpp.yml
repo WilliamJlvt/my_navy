@@ -30,16 +30,9 @@ jobs:
     needs: build
 
     steps:
-    - name: Set up Git
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-
-    - name: Create Release Tag
-      run: git tag -a v${{ github.run_number }} -m "Release v${{ github.run_number }}"
-      
-    - name: Push Tag to GitHub
-      run: git push origin v${{ github.run_number }}
+    - name: Create Tag
+      id: tag
+      run: echo ::set-output name=TAG::$(date +'%Y%m%d%H%M%S')
 
     - name: Create Release
       id: create_release
@@ -47,5 +40,5 @@ jobs:
       with:
         files: |
           ./path/to/your/binary   # Change this to the path of your compiled binary
-        tag_name: v${{ github.run_number }}
-        token: ${{ secrets.TOKEN }}
+        tag_name: ${{ steps.tag.outputs.TAG }}
+        token: ${{ secrets.GITHUB_TOKEN }}
