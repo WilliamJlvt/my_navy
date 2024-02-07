@@ -36,7 +36,7 @@ jobs:
 
     - name: Create Release
       id: create_release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: my_navy
         tag_name: ${{ steps.tag.outputs.TAG }}
@@ -47,5 +47,6 @@ jobs:
       with:
         asset_path: my_navy
         asset_name: my_navy
-        release_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_content_type: application/octet-stream
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
         token: ${{ secrets.TOKEN }}
